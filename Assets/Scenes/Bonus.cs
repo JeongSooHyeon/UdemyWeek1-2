@@ -14,7 +14,8 @@ public class Bonus : MonoBehaviour
 
     void Update()
     {
-        transform.Translate(speed * Time.deltaTime, 0, 0);
+        //transform.Rotate(new Vector3(0.2f, 0.2f, 0.2f));
+        transform.Translate(speed * Time.deltaTime, 0, 0, Space.World);
         if (transform.position.x < -10)
         {
             Destroy(gameObject);
